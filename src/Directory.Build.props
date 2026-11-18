@@ -1,0 +1,6 @@
+<Project>
+  <PropertyGroup>
+    <FrameworkCore Condition="'$(FrameworkCore)' == ''">$(DOKISABA_FRAMEWORK_CORE)</FrameworkCore>
+    <GameInterop Condition="'$(GameInterop)' == ''">$(DOKISABA_GAME_INTEROP)</GameInterop>
+  </PropertyGroup>
+</Project>

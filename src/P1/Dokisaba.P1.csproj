@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <AssemblyName>Dokisaba.P1</AssemblyName>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>../../artifacts/P1/</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BepInEx.Core" HintPath="$(FrameworkCore)/BepInEx.Core.dll" Private="false" />
+    <Reference Include="BepInEx.Unity.IL2CPP" HintPath="$(FrameworkCore)/BepInEx.Unity.IL2CPP.dll" Private="false" />
+    <Reference Include="App.Game" HintPath="$(GameInterop)/App.Game.dll" Private="false" />
+    <Reference Include="0Harmony" HintPath="$(FrameworkCore)/0Harmony.dll" Private="false" />
+    <Reference Include="Il2CppInterop.Runtime" HintPath="$(FrameworkCore)/Il2CppInterop.Runtime.dll" Private="false" />
+    <Reference Include="Message" HintPath="$(GameInterop)/Message.dll" Private="false" />
+  </ItemGroup>
+</Project>

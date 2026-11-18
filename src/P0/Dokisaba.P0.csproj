@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <AssemblyName>Dokisaba.P0</AssemblyName>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>../../artifacts/P0/</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="P0Plugin.cs" />
+    <Compile Include="../P0_Input_Prototype.cs" Link="P0_Input_Prototype.cs" />
+    <Reference Include="App.Game" HintPath="$(GameInterop)/App.Game.dll" Private="false" />
+    <Reference Include="BepInEx.Core" HintPath="$(FrameworkCore)/BepInEx.Core.dll" Private="false" />
+    <Reference Include="BepInEx.Unity.IL2CPP" HintPath="$(FrameworkCore)/BepInEx.Unity.IL2CPP.dll" Private="false" />
+    <Reference Include="0Harmony" HintPath="$(FrameworkCore)/0Harmony.dll" Private="false" />
+    <Reference Include="Il2CppInterop.Runtime" HintPath="$(FrameworkCore)/Il2CppInterop.Runtime.dll" Private="false" />
+  </ItemGroup>
+</Project>
