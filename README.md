@@ -1,2 +1,83 @@
-# DokiSaba-Chinese-Name-Mod
-Unofficial Simplified Chinese name input and original nickname enhancement mod for The Prince of Tennis: Doki Doki Survival - Eternal Passion.
+# DokiSaba 简体中文姓名与原版称呼 Mod
+
+适用于 Steam 版《网球王子 心跳求生 Tie break ♡ game》（AppID 3907380）。在简体中文界面输入和显示汉字姓名，独立选择日语姓氏、名字称呼，通过原版 EVS 播放录音。显示姓名、中文字幕和称呼 ID 沿用游戏原版路径。
+
+[**下载或打开安装与使用说明（PDF）**](docs/Installation-and-Usage-Guide.pdf)
+
+## 安装已验证版本
+
+1. 核对游戏为 Steam Build **26584781**，Unity **6000.0.61f1**，Windows x64 IL2CPP。核对 [版本与测试记录](docs/Versions.md) 中的 GameAssembly.dll SHA256。
+2. 退出游戏。从 [BepInEx 官方构建渠道](https://builds.bepinex.dev/projects/bepinex_be) 获取 **6.0.0-be.793+dbc82f0 Windows IL2CPP x64**。把发行包内容解压到含 Dokisaba.exe 的游戏根目录。已有加载器或同名文件时，先记录已安装版本与文件来源。
+3. 检查 [发布校验清单](release/SHA256SUMS.txt)，把 release/plugins 下三枚 DLL 复制到游戏目录的 BepInEx/plugins。旧版同名插件先备份到加载目录外。
+4. 将 release/config.example 中以下三个配置模板放入 BepInEx/config，确保三个开关均为 `true`。已有同名文件时，只修改相应配置键，保留其他用户设置。
+
+   | 配置文件 | 开关 |
+   | --- | --- |
+   | `local.dokisaba.prototype.p0only.cfg` | `P0Input = true` |
+   | `local.dokisaba.prototype.p1.cfg` | `P1Nickname = true` |
+   | `local.dokisaba.prototype.p2.cfg` | `P2OriginalEvs = true` |
+
+   P0 的代码默认关闭。首次安装时，请使用对应的配置模板或显式设置 `P0Input = true`。
+
+5. 正常通过 Steam 启动，保持游戏语言为简体中文。首次启动由 BepInEx 生成 interop，可通过 BepInEx/LogOutput.log 检查加载情况。
+
+上方姓名框填写显示姓名，下方称呼框搜索假名并选择原版候选。Tab 可试听，实际剧情只在原版请求姓名语音且角色有相应录音时发声。卸载插件时退出游戏，移走这三枚 DLL 即可。若还要移除加载器，按安装时记录移除该次添加的文件，并保留其他插件和用户数据。
+
+## 项目性质与免责声明
+
+本项目为玩家个人独立制作的非官方 Mod，与 KONAMI、游戏开发团队及发行方无关联，也未获得官方授权、认可或背书。
+
+本项目仅供个人非商业用途交流与使用，免费提供，不以销售、付费下载、付费解锁或其他形式进行商业化。
+
+游戏名称、商标、角色、原版文本、图像、音频、语音及其他游戏内容的知识产权均归 KONAMI 及相应权利人所有。
+
+本仓库仅提供本项目自行编写的插件源代码、编译产物、配置模板及相关说明文档，不包含、不托管、不分发游戏本体、原版程序集、游戏资源、角色立绘、音乐、语音、字体、视频、存档或其他原版游戏内容。
+
+使用者需要自行通过合法渠道购买并安装游戏。
+
+## 技术实现说明
+
+本 Mod 基于 BepInEx 插件加载机制，使用 Harmony 运行时补丁接入游戏相关逻辑，实现简体中文姓名输入、原版昵称候选搜索与选择，以及原版 EVS 姓名语音调用。
+
+P1 和 P2 还包含针对已验证游戏版本的局部原生运行时补丁。
+
+本项目使用游戏自身已有的候选数据和语音资源，不随插件重新分发这些原版资源。
+
+具体技术实现以仓库中本项目自行编写的源代码为准。
+
+## 游戏截图及视频发布说明
+
+本项目不鼓励或授权任何违反游戏官方现行规定的内容传播。
+
+请使用者自行遵守 KONAMI 关于游戏截图、视频、直播及修改内容展示的官方规定。
+
+如果官方规则明确限制公开展示修改后的游戏画面、截图或视频，请勿公开展示相关内容。请以官方最新有效规定为准。
+
+## 兼容性与风险说明
+
+本项目目前主要在以下环境下完成实机验证：
+
+- Windows 10 64-bit（实机环境）。Windows 11 64-bit 尚未独立验证。
+- Steam 版游戏。
+- 指定游戏 Build 26584781。
+- Unity 6000.0.61f1。
+- IL2CPP x64。
+- BepInEx 6.0.0-be.793+dbc82f0。
+
+其他操作系统、游戏版本及运行环境尚未得到充分验证，不保证兼容。
+
+游戏更新、运行环境变化及其他插件冲突可能导致 Mod 失效。建议安装前备份存档。
+
+本项目按现有状态提供，不保证适用于所有设备和使用场景。
+
+## 权利归属与联系
+
+本项目不代表游戏官方立场，也不主张拥有任何原版游戏内容的知识产权。
+
+如相关权利人认为本项目的某项内容涉及其合法权益，请通过 GitHub 公开联系渠道联系作者。作者会及时核查，并在必要时调整或下架相关内容。
+
+## 许可证说明
+
+当前暂不添加 LICENSE 文件。
+
+请勿擅自将仓库公开理解为已经获得商业使用、修改后再发布或其他衍生分发的授权。后续如需开放代码复用，将另行明确许可证及授权范围。
