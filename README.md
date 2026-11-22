@@ -3,7 +3,7 @@
 ## 简易安装（推荐）
 
 1. **备份存档：** 退出游戏，将游戏目录中的 `Save` 文件夹复制到桌面或其他安全位置（游戏目录查找方法见第 3 步）。
-2. **下载 Mod：** [点击下载 Mod-v1.0.zip 整合安装包](https://github.com/kui-2026/DokiSaba-Chinese-Name-Mod/releases/download/v1.0/Mod-v1.0.zip)，无需再单独下载 BepInEx。
+2. **下载 Mod：** [点击下载 Mod-v1.0.zip ](https://github.com/kui-2026/DokiSaba-Chinese-Name-Mod/releases/download/v1.0/Mod-v1.0.zip)，无需再单独下载 BepInEx。
 3. **解压安装：** 在 Steam 游戏库中右键点击本游戏 → **管理 → 浏览本地文件**，打开包含 `Dokisaba.exe` 的游戏文件夹。解压 ZIP，打开里面的 `Package` 文件夹，将其内部的全部文件和文件夹复制到游戏目录中（不要把 `Package` 文件夹整体放进去）。确认 `winhttp.dll` 与 `Dokisaba.exe` 位于同一层，然后通过 Steam 正常启动游戏。
 
 > 首次启动可能需要等待较长时间，请不要关闭出现的黑色窗口。整合包内附有 `使用说明.txt`。适用 Steam Build 26584781，Windows x64；已在 Windows 10 实机验证。
