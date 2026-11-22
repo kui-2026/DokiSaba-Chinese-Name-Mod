@@ -6,11 +6,11 @@
 2. **下载 Mod：** [点击下载 Mod-v1.0.zip ](https://github.com/kui-2026/DokiSaba-Chinese-Name-Mod/releases/download/v1.0/Mod-v1.0.zip)，无需再单独下载 BepInEx。
 3. **解压安装：** 在 Steam 游戏库中右键点击本游戏 → **管理 → 浏览本地文件**，打开包含 `Dokisaba.exe` 的游戏文件夹。解压 ZIP，打开里面的 `Package` 文件夹，将其内部的全部文件和文件夹复制到游戏目录中（不要把 `Package` 文件夹整体放进去）。确认 `winhttp.dll` 与 `Dokisaba.exe` 位于同一层，然后通过 Steam 正常启动游戏。
 
-> 首次启动可能需要等待较长时间，请不要关闭出现的黑色窗口。整合包内附有 `使用说明.txt`。适用 Steam Build 26584781，Windows x64；已在 Windows 10 实机验证。
+> 首次启动可能需要等待较长时间，请不要关闭出现的黑色窗口。黑框中出现红色日志不必担心，只要游戏能够正常打开、Mod 功能正常使用即可。整合包内附有 `使用说明.txt`。适用 Steam Build 26584781，Windows x64；已在 Windows 10 实机验证。
 
 适用于 Steam 版《网球王子 心跳求生 Tie break ♡ game》（AppID 3907380）。在简体中文界面输入和显示汉字姓名，独立选择日语姓氏、名字称呼，通过原版 EVS 播放录音。显示姓名、中文字幕和称呼 ID 沿用游戏原版路径。
 
-[**下载或打开安装与使用说明（PDF）**](docs/Installation-and-Usage-Guide.pdf)
+[**下载或打开安装与使用说明（PDF）（旧）**](docs/Installation-and-Usage-Guide.pdf)
 
 ## 安装已验证版本
 
