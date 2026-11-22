@@ -10,7 +10,6 @@
 
 适用于 Steam 版《网球王子 心跳求生 Tie break ♡ game》（AppID 3907380）。在简体中文界面输入和显示汉字姓名，独立选择日语姓氏、名字称呼，通过原版 EVS 播放录音。显示姓名、中文字幕和称呼 ID 沿用游戏原版路径。
 
-[**下载或打开安装与使用说明（PDF）（旧）**](docs/Installation-and-Usage-Guide.pdf)
 
 ## 安装已验证版本
 
