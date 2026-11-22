@@ -11,27 +11,6 @@
 适用于 Steam 版《网球王子 心跳求生 Tie break ♡ game》（AppID 3907380）。
 <img width="1473" height="295" alt="image" src="https://github.com/user-attachments/assets/50c810c7-d4e3-4b2b-881f-8d422cd7bac1" />
 
-
-
-## 安装已验证版本
-
-1. 核对游戏为 Steam Build **26584781**，Unity **6000.0.61f1**，Windows x64 IL2CPP。核对 [版本与测试记录](docs/Versions.md) 中的 GameAssembly.dll SHA256。
-2. 退出游戏。从 [BepInEx 官方构建渠道](https://builds.bepinex.dev/projects/bepinex_be) 获取 **6.0.0-be.793+dbc82f0 Windows IL2CPP x64**。把发行包内容解压到含 Dokisaba.exe 的游戏根目录。已有加载器或同名文件时，先记录已安装版本与文件来源。
-3. 检查 [发布校验清单](release/SHA256SUMS.txt)，把 release/plugins 下三枚 DLL 复制到游戏目录的 BepInEx/plugins。旧版同名插件先备份到加载目录外。
-4. 将 release/config.example 中以下三个配置模板放入 BepInEx/config，确保三个开关均为 `true`。已有同名文件时，只修改相应配置键，保留其他用户设置。
-
-   | 配置文件 | 开关 |
-   | --- | --- |
-   | `local.dokisaba.prototype.p0only.cfg` | `P0Input = true` |
-   | `local.dokisaba.prototype.p1.cfg` | `P1Nickname = true` |
-   | `local.dokisaba.prototype.p2.cfg` | `P2OriginalEvs = true` |
-
-   P0 的代码默认关闭。首次安装时，请使用对应的配置模板或显式设置 `P0Input = true`。
-
-5. 正常通过 Steam 启动，保持游戏语言为简体中文。首次启动由 BepInEx 生成 interop，可通过 BepInEx/LogOutput.log 检查加载情况。
-
-上方姓名框填写显示姓名，下方称呼框搜索假名并选择原版候选。Tab 可试听，实际剧情只在原版请求姓名语音且角色有相应录音时发声。卸载插件时退出游戏，移走这三枚 DLL 即可。若还要移除加载器，按安装时记录移除该次添加的文件，并保留其他插件和用户数据。
-
 ## 项目性质与免责声明
 
 本项目为玩家个人独立制作的非官方 Mod，与 KONAMI、游戏开发团队及发行方无关联，也未获得官方授权、认可或背书。
