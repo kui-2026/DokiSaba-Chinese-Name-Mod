@@ -8,7 +8,9 @@
 
 > 首次启动可能需要等待较长时间，请不要关闭出现的黑色窗口。黑框中出现红色日志不必担心，只要游戏能够正常打开、Mod 功能正常使用即可。整合包内附有 `使用说明.txt`。适用 Steam Build 26584781，Windows x64；已在 Windows 10 实机验证。
 
-适用于 Steam 版《网球王子 心跳求生 Tie break ♡ game》（AppID 3907380）。在简体中文界面输入和显示汉字姓名，独立选择日语姓氏、名字称呼，通过原版 EVS 播放录音。显示姓名、中文字幕和称呼 ID 沿用游戏原版路径。
+适用于 Steam 版《网球王子 心跳求生 Tie break ♡ game》（AppID 3907380）。
+<img width="1473" height="295" alt="image" src="https://github.com/user-attachments/assets/50c810c7-d4e3-4b2b-881f-8d422cd7bac1" />
+
 
 
 ## 安装已验证版本
